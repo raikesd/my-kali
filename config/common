@@ -32,8 +32,8 @@ LB_APT_SECURE="true"
 LB_APT_SOURCE_ARCHIVES="true"
 
 # $LB_BOOTSTRAP: set bootstrap program
-# (Default: debootstrap)
-LB_BOOTSTRAP="debootstrap"
+# (Default: cdebootstrap)
+LB_BOOTSTRAP="cdebootstrap"
 
 # $LB_CACHE: control cache
 # (Default: true)
@@ -133,6 +133,6 @@ _QUIET="false"
 APT_OPTIONS="--yes"
 APTITUDE_OPTIONS="--assume-yes"
 DEBOOTSTRAP_OPTIONS=""
-CDEBOOTSTRAP_OPTIONS=""
+CDEBOOTSTRAP_OPTIONS="--keyring=/usr/share/keyrings/kali-archive-keyring.gpg --suite-config=wheezy"
 GZIP_OPTIONS="-6  --rsyncable"
 ISOHYBRID_OPTIONS=""
